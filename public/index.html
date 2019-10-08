@@ -1,414 +1,62 @@
-<!doctype html>
-<html class="no-js" lang="zxx">
-
-<head>
+<!DOCTYPE html>
+<html>
+  <head>
     <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>DURG Indudtry Template by Colorlib</title>
-    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Colour Chem</title>
 
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.1.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.1.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.1.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.1.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.1.0/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/themify-icons.css">
-    <link rel="stylesheet" href="css/nice-select.css">
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/slicknav.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-    <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
-
-    <!-- header-start -->
-    <header>
-        <div class="header-area ">
-            <div class="header-top black-bg d-none d-md-block">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-6 col-md-6 col-lg-6">
-                            <div class="header-contact">
-                                <a href="#"><i class="fa fa-phone"></i> +880 256 356 256</a>
-                                <a href="#"><i class="fa fa-envelope"></i> support24@durg.com</a>
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-md-6 col-lg-6">
-                            <div class="header-top-menu">
-                                <nav>
-                                    <ul>
-                                        <li><a href="blog.html">News & media</a></li>
-                                        <li><a href="review.html">Review</a></li>
-                                        <li><a href="faq.html">FAQ</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="sticky-header" class="main-header-area white-bg">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-xl-2 col-lg-2">
-                            <div class="logo-img">
-                                <a href="index.html">
-                                    <img src="img/logo.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-xl-7 col-lg-7">
-                            <div class="main-menu d-none d-lg-block">
-                                <nav>
-                                    <ul id="navigation">
-                                        <li><a class="active" href="index.html">Home</a></li>
-                                        <li><a href="about.html">About</a></li>
-                                        <li><a href="service.html">Products</a></li>
-                                        <li><a href="project.html">Technical Services</a></li>
-                                        <li><a href="#">blog <i class="ti-angle-down"></i></a>
-                                            <ul class="submenu">
-                                                <li><a href="blog.html">blog</a></li>
-                                                <li><a href="single-blog.html">single-blog</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">pages <i class="ti-angle-down"></i></a>
-                                            <ul class="submenu">
-                                                <li><a href="elements.html">elements</a></li>
-                                                <li><a href="service-details.html">service-details</a></li>
-                                                <li><a href="project-details.html">project-details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="contact.html">Contact</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-3">
-                            <div class="quote-area">
-                                <div class="search-bar">
-                                    <a id="search_1" href="javascript:void(0)"><i class="fa fa-search"></i></a>
-                                </div>
-                                <div class="get-quote d-none d-lg-block">
-                                    <a class="boxed-btn" href="#">Web Mail</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="mobile_menu d-block d-lg-none"></div>
-                        </div>
-                    </div>
-                    <div class="search_input" id="search_input_box">
-                        <div class="container ">
-                            <form class="d-flex justify-content-between search-inner">
-                                <input type="text" class="form-control" id="search_input" placeholder="Search Here">
-                                <button type="submit" class="btn"></button>
-                                <span class="fa fa-close" id="close_search" title="Close Search"></span>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- header-end -->
-
-    <!-- slider-area-start -->
-    <div class="slider-area">
-        <div class="slider-active owl-carousel">
-            <div class="single-slider slider-img-2">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-7 offset-xl-1 col-lg-7">
-                            <div class="slider-content">
-                                <p>Quality work. Trustable service. Dedicated team</p>
-                                <h3>We provide your Industrial solution</h3>
-                                <div class="slider-btn">
-                                    <a class="boxed-btn2" href="#">Our Services <i
-                                            class="Flaticon flaticon-right-arrow"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="single-slider bg-img-1">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-7 offset-xl-1 col-lg-7">
-                            <div class="slider-content">
-                                <p>Quality work. Trustable service. Dedicated team</p>
-                                <h3>We provide your Industrial solution</h3>
-                                <div class="slider-btn">
-                                    <a class="boxed-btn2" href="#">Our Services <i
-                                            class="Flaticon flaticon-right-arrow"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="single-slider bg-img-1">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-7 offset-xl-1 col-lg-7">
-                            <div class="slider-content">
-                                <p>Quality work. Trustable service. Dedicated team</p>
-                                <h3>We provide your Industrial solution</h3>
-                                <div class="slider-btn">
-                                    <a class="boxed-btn2" href="#">Our Services <i
-                                            class="Flaticon flaticon-right-arrow"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <style media="screen">
+      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
+      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
+      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
+      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
+      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
+      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
+      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
+      @media (max-width: 600px) {
+        body, #message { margin-top: 0; background: white; box-shadow: none; }
+        body { border-top: 16px solid #ffa100; }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="message">
+      <h1>Welcome To Colour Chem</h2>
+      <h2>This website is under maintanence</h1>
     </div>
-    <!-- slider-area-end -->
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
 
-    <!-- service-area-start -->
-    <div class="service-area">
-        <div class="container">
-            <div class="row align-items-center justify-content-center">
-                <div class="section-title text-center mb-65">
-                    <!-- <span>OUR SERVICES</span> -->
-                    <h3>Welcome To <br>
-                        Colour Chem</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-4 col-md-4">
-                    <div class="single-service">
-                        <div class="service-thumb">
-                            <img src="img/dysin/welcome-img.jpg" alt="">
-                        </div>
-                        <h3>About Color Chem</h3>
-                        <p>Dysin-Chem Limited, the core company of Dysin Group made its official debut to the service of local textile industry back in 1984. The growth of Bangladesh textile industry...</p>
-                        <a href="#" class="read-more">Read More</a>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-4">
-                    <div class="single-service">
-                        <div class="service-thumb">
-                            <img src="img/dysin/product-img.jpg" alt="">
-                        </div>
-                        <h3>Products</h3>
-                        <p>For the Textile Industry in Bangladesh, DYSIN offers comprehensive range of products complying OEKOTEX Standard 100, latest EU regulations (such as REACh) and leading...</p>
-                        <a href="#" class="read-more">Read More</a>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-4">
-                    <div class="single-service">
-                        <div class="service-thumb">
-                            <img src="img/dysin/service-img.jpg" alt="">
-                        </div>
-                        <h3>Technical Services</h3>
-                        <p>DYSIN's core business depends on strong Sales & Distribution network backed by efficient technical services. We believe in providing Solutions, not Products only...</p>
-                        <a href="#" class="read-more">Read More</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row" style="padding-top: 50px;">
-                <div class="col-xl-4 col-md-4">
-                    <div class="single-service">
-                        <h3>Machinery Division</h3>
-                        <p>DYSIN Started promoting Laboratory Dyeing & Finishing equipment since 1990 and expanded range of machinery brands after 2001. Now we are offering full range of Laboratory...</p>
-                        <a href="#" class="read-more">Read More</a>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-4">
-                    <div class="single-service">
-                        <h3>Countrywide Offices</h3>
-                        <p>For the Textile Industry in Bangladesh, DYSIN offers comprehensive range of products complying OEKOTEX Standard 100, latest EU regulations (such as REACh) and leading...</p>
-                        <a href="#" class="read-more">Read More</a>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-4">
-                    <div class="single-service">
-                        <h3>ISO/IEC 17025 Accredited Testing & Calibration Laboratory</h3>
-                        <p>Dysin, being one of the oldest & largest distributors of textile Dyes & Chemicals...</p>
-                        <a href="#" class="read-more">Read More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- service-area-end -->
-
-    <!-- project-area-start -->
-    <div class="project-area bg-img-2 overlay">
-        <div class="container-fluid p-lg-0">
-            <div class="row justify-content-end no-gutters">
-                <div class="col-xl-4 col-md-6">
-                    <div class="section-title text-white mb-65 ml-80">
-                        <h3>Take a look around <br>
-                            our projects</h3>
-                        <p>Waters make fish every without firmament saw had. <br> Morning air subdue.</p>
-                        <div class="more-project">
-                            <a href="#">More Projects</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-md-6">
-                    <div class="project-active owl-carousel">
-                        <div class="single-project">
-                            <div class="project-thumb">
-                                <img src="img/project/1.jpg" alt="">
-                            </div>
-                            <div class="project-info">
-                                <span>Industrial construction</span>
-                                <h3>Research and development center</h3>
-                            </div>
-                        </div>
-                        <div class="single-project">
-                            <div class="project-thumb">
-                                <img src="img/project/1.jpg" alt="">
-                            </div>
-                            <div class="project-info">
-                                <span>Machine engineering</span>
-                                <h3>Project of technological park</h3>
-                            </div>
-                        </div>
-                        <div class="single-project">
-                            <div class="project-thumb">
-                                <img src="img/project/1.jpg" alt="">
-                            </div>
-                            <div class="project-info">
-                                <span>Industrial construction</span>
-                                <h3>Research and development center</h3>
-                            </div>
-                        </div>
-                        <div class="single-project">
-                            <div class="project-thumb">
-                                <img src="img/project/1.jpg" alt="">
-                            </div>
-                            <div class="project-info">
-                                <span>Machine engineering</span>
-                                <h3>Project of technological park</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- project-area-end -->
-
-    <!-- footer-start -->
-    <footer class="footer-area ">
-        <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-sm-6 col-md-3 col-xl-4">
-                    <div class="single-footer-widget footer_1">
-                        <a href="index.html"> <img src="img/footer-logo.png" alt=""> </a>
-                        <p>Waters make fish every without firmament saw had. Morning air subdue very one. Whales grass
-                            is fish whales winged.</p>
-                        <div class="social-links">
-                            <ul>
-                                <li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
-                                <li><a href="#"> <i class="fa fa-twitter"></i> </a></li>
-                                <li><a href="#"> <i class="fa fa-linkedin"></i> </a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-2 col-xl-2">
-                    <div class="single-footer-widget">
-                        <h4>Company</h4>
-                        <ul>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Media</a></li>
-                            <li><a href="#">Carrier</a></li>
-                            <li><a href="#">Testimonials</a></li>
-                            <li><a href="#">Stability</a></li>
-                        </ul>
-
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-3 col-xl-3">
-                    <div class="single-footer-widget">
-                        <h4>Solutions</h4>
-                        <ul>
-                            <li><a href="#">Industrial problems</a></li>
-                            <li><a href="#"> Construction solution</a></li>
-                            <li><a href="#">Car manufacturing</a></li>
-                            <li><a href="#">Mechanical problems</a></li>
-                        </ul>
-
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-3 col-xl-3">
-                    <div class="single-footer-widget footer_icon">
-                        <h4>Branch office</h4>
-                        <div class="office-location">
-                            <ul>
-                                <li>
-                                    <strong>London - UK</strong>
-                                    <p>127, Manchaster city, London <br>
-                                        +008 728 362 278</p>
-                                </li>
-                                <li>
-                                    <strong>New York - USA</strong>
-                                    <p>127, Manchaster city, London <br>
-                                        +008 728 362 278</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid">
-            <div class="row justify-content-center">
-                <div class="col-lg-12">
-                    <div class="copyright_part_text text-center">
-                        <p class="footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- footer-end -->
-
-    <!-- JS here -->
-    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-    <script src="js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/ajax-form.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/scrollIt.js"></script>
-    <script src="js/jquery.scrollUp.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/nice-select.min.js"></script>
-    <script src="js/jquery.slicknav.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/plugins.js"></script>
-
-    <!--contact js-->
-    <script src="js/contact.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/jquery.form.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/mail-script.js"></script>
-
-    <script src="js/main.js"></script>
-
-</body>
-
+        try {
+          let app = firebase.app();
+          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
+          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script>
+  </body>
 </html>
