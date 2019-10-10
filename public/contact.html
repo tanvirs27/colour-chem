@@ -132,6 +132,16 @@
         </div>
     </div>
 
+    <!-- FOOTER -->
+    <footer class="footer mt-auto py-3 bg-dark text-white-50">
+        <div class="container text-center">
+            <p>© Copyright Colour Chem 2019 <br>All rights reserved</p>
+            <p>This website is created and maintained by <a style="color: yellow"
+                    href="http://bd.linkedin.com/in/tanvirs27">Tanvir Shahriar
+                    Rifat</a></p>
+        </div>
+    </footer>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -146,6 +156,25 @@
             })();
     </script>
     <script src="js/contact.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-analytics.js"></script>
+
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyCqjawWAF2CHWSdErxSJcn85mVZ8gHxYQ0",
+            authDomain: "colour-chem.firebaseapp.com",
+            databaseURL: "https://colour-chem.firebaseio.com",
+            projectId: "colour-chem",
+            storageBucket: "colour-chem.appspot.com",
+            messagingSenderId: "600706811881",
+            appId: "1:600706811881:web:d8441b72d8cb345c44ad78",
+            measurementId: "G-508TNPK3SK"
+        };
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
 </body>
 
 </html>

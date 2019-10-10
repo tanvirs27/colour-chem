@@ -48,7 +48,8 @@
                         <a class="nav-link" href="products.html">Products</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="services.html">Technical Services <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="services.html">Technical Services <span
+                                class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="testing-lab.html">Testing Lab</a>
@@ -70,7 +71,9 @@
 
     <div class="col-sm-8 offset-sm-2" style="margin-top: 65px;">
         <div class="card">
-            <div class="card-header"><h4>Technical Services</h4></div>
+            <div class="card-header">
+                <h4>Technical Services</h4>
+            </div>
             <div class="card-body">
                 <p>DYSIN's core business depends on strong Sales & Distribution network backed by efficient technical
                     services. We believe in providing Solutions, not Products only.</p>
@@ -171,6 +174,16 @@
         </div>
     </div>
 
+    <!-- FOOTER -->
+    <footer class="footer mt-auto py-3 bg-dark text-white-50">
+        <div class="container text-center">
+            <p>© Copyright Colour Chem 2019 <br>All rights reserved</p>
+            <p>This website is created and maintained by <a style="color: yellow"
+                    href="http://bd.linkedin.com/in/tanvirs27">Tanvir Shahriar
+                    Rifat</a></p>
+        </div>
+    </footer>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -178,6 +191,25 @@
     <script src="dist/js/bootstrap.bundle.min.js"
         integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
         crossorigin="anonymous"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-analytics.js"></script>
+
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyCqjawWAF2CHWSdErxSJcn85mVZ8gHxYQ0",
+            authDomain: "colour-chem.firebaseapp.com",
+            databaseURL: "https://colour-chem.firebaseio.com",
+            projectId: "colour-chem",
+            storageBucket: "colour-chem.appspot.com",
+            messagingSenderId: "600706811881",
+            appId: "1:600706811881:web:d8441b72d8cb345c44ad78",
+            measurementId: "G-508TNPK3SK"
+        };
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
 </body>
 
 </html>
