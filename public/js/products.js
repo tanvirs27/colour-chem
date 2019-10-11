@@ -235,15 +235,6 @@ function hideChildren(parentId) {
     });
 }
 
-$(".shorter-link").find("a").each(
-    function (index, value) {
-        var text = $(this).text();
-
-        if (text.length > 17) {
-            text = text.substr(0, 14) + "..."
-        }
-        $(this).text(text);
-    });
 
 function change(id) {
     $('.list-group').find('.active').removeClass("active").addClass('bg-light');
@@ -251,7 +242,7 @@ function change(id) {
 
     var $element = $("#" + id).find('.fa')[0];
 
-    if (hasClass($element, 'fa-chevron-down')) {
+    if ($element !== undefined && hasClass($element, 'fa-chevron-down')) {
         children[id].forEach(element => {
             $("#" + element).addClass('item-show')
                 .removeClass('item-hidden');
@@ -266,12 +257,123 @@ function change(id) {
         .toggleClass('fa-chevron-down')
         .toggleClass('fa-chevron-up');
 
+    showDetail(id);
+
     return false;
 }
 
 function showDetail(id) {
     $(".detail").hide();
+
+    if ($("#detail_" + id).length == 0) {
+        var title = $("#" + id).text();
+        showNoDetail(title);
+
+        return false;
+    }
+
     $("#detail_" + id).show();
 
     return false;
 }
+
+function showNoDetail(title) {
+    $("#detail_NA").find(".card-header").find("h3").text(title);
+    $("#detail_NA").show();
+}
+
+$(function () {
+
+    $(".card-with-no-text").each(function (index, value) {
+        var id = $(this)[0].id.substr(7);
+        var $div = $(this);
+
+        var $card = $("<div>").addClass("card")
+            .append(
+                $("<div>").addClass("card-header")
+                    .append(
+                        $("<h3>").text($("#" + id).text().trim())
+                    )
+            ).append(
+                $("<div>").addClass("card-body")
+                    .append(
+                        $("<div>", {
+                            'id': "images_" + id
+                        }).addClass("with-no-img")
+                    )
+            )
+
+        $div.append($card);
+    });
+
+    $(".with-no-img").each(function (index, value) {
+        var id = $(this)[0].id.substr(7);
+        var $div = $(this);
+
+        $row = $("<div>").addClass("row");
+
+        $.each(children[id], function (index, value) {
+
+            if (index != 0 && index % 4 == 0) {
+                $div.append($row);
+                $row = $("<div>").addClass("row");
+            }
+            $row.append(getImageCardWithNoimage(value));
+        });
+
+        $div.append($row);
+    });
+
+    function getImageCardWithNoimage(id) {
+
+        return $("<div>").addClass("col-md-3")
+            .append(
+                $("<div>").addClass("card mb-3 shadow-sm")
+                    .append(
+                        $("<svg>").addClass("bd-placeholder-img card-img-top")
+                            .attr({
+                                'width': '100%',
+                                'height': "225",
+                                'preserveAspectRatio': "xMidYMid slice",
+                                'focusable': "false",
+                                'role': "img",
+                                'aria-label': "Placeholder: Thumbnail"
+                            })
+                            .append(
+                                $("<title>").text($("#" + id).text().trim())
+                            )
+                            .append(
+                                $("<image>", {
+                                    'href': "img/products/na.png"
+                                }).attr({
+                                    'width': "100%",
+                                    'height': "100%"
+                                })
+                            )
+                    )
+                    .append(
+                        $("<div>").addClass("card-body shorter-link")
+                            .append(
+                                $("<a>", {
+                                    href: "javascript:void(0)",
+                                    onClick: "showDetail('" + id + "')"
+                                }).text($("#" + id).text().trim())
+                            )
+                    )
+            );
+
+    }
+
+
+    $(".shorter-link").find("a").each(
+        function (index, value) {
+            var text = $(this).text().trim();
+
+            if (text.length > 16) {
+                text = text.substr(0, 14) + "..."
+            }
+            $(this).text(text);
+        });
+
+    $("body").html($("body").html());
+});
